@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  /* center the content */
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  /* make the search bar the full width */
+  align-self: stretch;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#search {
+  height: 60px;
+}
