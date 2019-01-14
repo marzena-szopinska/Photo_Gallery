@@ -11,6 +11,7 @@ body {
 
 img {
   max-width: 100%;
+  margin-bottom: 20px;
 }
 
 label {
@@ -37,8 +38,8 @@ label {
   align-self: stretch;
   text-align: center;
   /* make some space at the top and the bottom of the search-box */
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
 #search {
@@ -46,4 +47,21 @@ label {
   border-radius: 5px;
   border: 1.5px solid black;
   padding: 5px;
+}
+
+
+.lb-data .lb-close {
+  position: absolute;
+  top: -35px;
+  right: 10px;
+}
+
+.lb-data .lb-details {
+  float: none;
+  text-align: center;
+  margin: 5px auto;
+}
+
+.lb-data .lb-caption {
+  font-size: 20px;
 }
