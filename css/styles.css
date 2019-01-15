@@ -7,6 +7,12 @@
 body {
   font-family: 'Staatliches', cursive;
   font-size: 16px;
+
+  display: flex;
+  flex-direction: column;
+  /* center the content */
+  justify-content: center;
+  align-items: center;
 }
 
 img {
@@ -31,6 +37,10 @@ label {
   align-items: center;
 }
 
+.search {
+  width: 70%;
+}
+
 .search-box {
   display: flex;
   flex-direction: column;
@@ -45,21 +55,8 @@ label {
 #search {
   height: 60px;
   border-radius: 5px;
-  border: 1.5px solid black;
+  border: 1.5px solid gray;
   padding: 5px;
-}
-
-
-.lb-data .lb-close {
-  position: absolute;
-  top: -35px;
-  right: 10px;
-}
-
-.lb-data .lb-details {
-  float: none;
-  text-align: center;
-  margin: 5px auto;
 }
 
 .lb-data .lb-caption {
@@ -72,22 +69,50 @@ label {
   margin-top: 10px;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    /* center the content */
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    margin-bottom: 45px;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 65%;
+  }
+
+  .gallery {
+    justify-content: space-between;
+  }
+
+  .hidden-label {
+    display: none;
+  }
+
+  .search-box {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px){
   .lb-nav a.lb-next,
   .lb-nav a.lb-prev {
     position: absolute;
   }
 
   .lb-nav a.lb-next {
-    right: -140px;
+    right: -115px;
   }
 
   .lb-nav a.lb-prev {
-    left: -140px;
+    left: -115px;
   }
-
-  .lb-data .lb-close {
-    right: 140px;
-  }
-
 }

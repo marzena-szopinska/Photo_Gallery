@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <div class="container">
+    <div class="container search">
       <div class="search-box">
         <label class="hidden-label" for='search'>Search the site:</label>
         <input type="search" id='search' name='user-search' placeholder="Search ( 16pt ) ...">
       </div>
     </div>
-    <div class="container">
+    <div class="container gallery">
       <a href='photos/01.jpg' data-lightbox="image" data-title="Hay Bales. I love hay bales.
       Took this snap on a drive through the countryside past some straw fields."><img src="photos/thumbnails/01.jpg" alt=''></a>
       <a href='photos/02.jpg' data-lightbox="image" data-title="Lake. The lake was so calm today.
@@ -53,23 +53,23 @@
       })
 
       function changeLightbox(media) {
-        // If media query matches
+        // If media query matches (769px)
         if (media.matches) {
-          //document.body.style.backgroundColor = "green";
+          // chenge the lightbox width and possition it lower
           lightbox.option({
-            'maxWidth': 600,
-            'positionFromTop': 145
+            'maxWidth': 800,
+            'positionFromTop': 100
           })
         } else {
-          document.body.style.backgroundColor = "orange";
+          // do nothing
         }
       }
 
-      var media = window.matchMedia("(min-width: 768px)");
+      const media = window.matchMedia("(min-width: 768px)");
       // Call listener function at run time
-      changeLightbox(media)
+      changeLightbox(media);
       // Attach listener function on state changes
-      media.addListener(changeLightbox)
+      media.addListener(changeLightbox);
     </script>
   </body>
 </html>
