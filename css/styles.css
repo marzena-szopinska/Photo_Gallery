@@ -64,4 +64,30 @@ label {
 
 .lb-data .lb-caption {
   font-size: 20px;
+  line-height: 1.25em;
+}
+
+.lb-data .lb-number {
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+@media (min-width: 769px) {
+  .lb-nav a.lb-next,
+  .lb-nav a.lb-prev {
+    position: absolute;
+  }
+
+  .lb-nav a.lb-next {
+    right: -140px;
+  }
+
+  .lb-nav a.lb-prev {
+    left: -140px;
+  }
+
+  .lb-data .lb-close {
+    right: 140px;
+  }
+
 }
