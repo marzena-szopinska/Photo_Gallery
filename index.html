@@ -44,32 +44,8 @@
       on the mountain before the fog came in."><img src="photos/thumbnails/12.jpg" alt=''></a>
     </div>
 
-    <script type="text/javascript" src="js/jQuery_3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/lightbox/lightbox.js"></script>
-    <script>
-      lightbox.option({
-        'alwaysShowNavOnTouchDevices': true,
-        'positionFromTop': 80
-      })
-
-      function changeLightbox(media) {
-        // If media query matches (769px)
-        if (media.matches) {
-          // chenge the lightbox width and possition it lower
-          lightbox.option({
-            'maxWidth': 800,
-            'positionFromTop': 100
-          })
-        } else {
-          // do nothing
-        }
-      }
-
-      const media = window.matchMedia("(min-width: 768px)");
-      // Call listener function at run time
-      changeLightbox(media);
-      // Attach listener function on state changes
-      media.addListener(changeLightbox);
-    </script>
+    <script src="js/jQuery_3.3.1.min.js"></script>
+    <script src="js/lightbox/lightbox.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
