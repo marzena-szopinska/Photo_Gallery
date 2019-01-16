@@ -83,14 +83,14 @@ label {
     margin-bottom: 45px;
   }
 
+  .gallery {
+    justify-content: space-around;
+  }
+
   .container {
     flex-direction: row;
     flex-wrap: wrap;
     width: 65%;
-  }
-
-  .gallery {
-    justify-content: space-between;
   }
 
   .hidden-label {
@@ -98,11 +98,16 @@ label {
   }
 
   .search-box {
-    width: 60%;
+    width: 40%;
   }
 }
 
 @media (min-width: 1024px){
+
+  .container {
+    width: 85%;
+  }
+
   .lb-nav a.lb-next,
   .lb-nav a.lb-prev {
     position: absolute;
@@ -114,5 +119,13 @@ label {
 
   .lb-nav a.lb-prev {
     left: -115px;
+  }
+
+  img[src*='thumb'] {
+    padding: 5px 30px;
+  }
+
+  .gallery {
+    justify-content: center;
   }
 }

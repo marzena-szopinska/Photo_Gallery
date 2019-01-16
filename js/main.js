@@ -26,13 +26,14 @@ media.addListener(changeLightbox);
 $(document).ready(function(){
     $('#search').on('keyup', function(){
     const $value = $(this).val().toLowerCase();
-
-    for(let i= 0; i < $('a').length; i++){
+    const $linksNum = $('a').length;
+    for(let i= 0; i < $linksNum; i++){
       let $link = $('a').eq(i);
       let $title = $link.attr("data-title");
       if($title.indexOf($value) > -1){
         $link.css("display", "");
-      }else{
+      }else
+      {
         $link.css("display", "none");
       }
     }
