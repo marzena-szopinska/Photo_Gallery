@@ -1,7 +1,7 @@
 lightbox.option({
   'alwaysShowNavOnTouchDevices': true,
   'positionFromTop': 80
-})
+});
 
 function changeLightbox(media) {
   // If media query matches (769px)
@@ -10,7 +10,7 @@ function changeLightbox(media) {
     lightbox.option({
       'maxWidth': 800,
       'positionFromTop': 100
-    })
+    });
   } else {
     // do nothing
   }
@@ -26,6 +26,7 @@ media.addListener(changeLightbox);
 $(document).ready(function(){
     $('#search').on('keyup', function(){
     const $value = $(this).val().toLowerCase();
+
     for(let i= 0; i < $('a').length; i++){
       let $link = $('a').eq(i);
       let $title = $link.attr("data-title");
